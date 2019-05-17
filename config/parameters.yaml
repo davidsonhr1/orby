@@ -1,0 +1,7 @@
+params:
+  - { name: url, description: "database url_host addr ex: aws-db-us", type: string, opt: -u}
+  - { name: client, description: "connection client ex: db1a", type: string, opt: -c }
+  - { name: dashboard, description: "name of dashboard", type: string, opt: -d }
+  - { name: from_path, description: "path of file", type: string, opt: -f }
+  - { name: to_path, description: "path for file", type: string, opt: -t }
+  - { name: query, description: "query", type: string, opt: -q }
