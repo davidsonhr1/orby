@@ -10,6 +10,9 @@ def get_options():
 	for doc in docs:
 	    for k,v in doc.items():
 	        for p in v:
-	        	parser.add_option(f"{p['opt']}", f"--{p['name']}", dest=f"{p['name']}", help=f"{p['description']}", metavar=f"{p['name'].upper()}")
+	        	if p['opt'] is None:
+	        		parser.add_option(f"--{p['name']}", dest=f"{p['name']}", help=f"{p['description']}", metavar=f"{p['name'].upper()}")
+	        	else:
+	        		parser.add_option(f"{p['opt']}", f"--{p['name']}", dest=f"{p['name']}", help=f"{p['description']}", metavar=f"{p['name'].upper()}")
 	(options, args) = parser.parse_args()
 	return options

@@ -6,7 +6,7 @@ module OrbyInitialize
 
 		$arg = Optimist::options do
 			opt :script, "script name", :type => "string", :short => "-s"
-			params.each {|i| opt i['name'].to_sym, "#{i['description']}", :type => i['type'], :short => "#{i['opt']}"}
+			params.each {|i| opt i['name'].to_sym, "#{i['description']}", :type => i['type'], :short => !i['opt'].nil? ? ("#{i['opt']}") : (nil) }
 		end
 	end
 
