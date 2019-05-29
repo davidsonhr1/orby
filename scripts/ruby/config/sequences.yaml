@@ -1,0 +1,6 @@
+tabela1:
+   sequence: SEQ_TABELA1
+   key: TABELA1_ID
+tabela2:
+   sequence: SEQ_TABELA2
+   key: TABELA2_ID
