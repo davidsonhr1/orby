@@ -41,7 +41,7 @@ GEM
       highline (>= 1.6, < 3)
       options (~> 2.3.0)
     rack (2.0.7)
-    rake (12.3.2)
+    rake (12.3.3)
     require_all (2.0.0)
     ruby-oci8 (2.2.7)
     rubyzip (1.2.2)
